@@ -1,7 +1,7 @@
 var dataCacheName = 'BPMeter';
 var cacheName = 'BPMeter';
 var filesToCache = [
-  '/miscwebapps/manualBPM',
+  '/miscwebapps/manualBPM/',
   '/miscwebapps/manualBPM/index.html',
   '/miscwebapps/manualBPM/logic.js',
   '/miscwebapps/manualBPM/style.css',
