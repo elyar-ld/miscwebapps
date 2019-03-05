@@ -22,6 +22,6 @@ function chngimg() {
 
 if ('serviceWorker' in navigator) {
 	navigator.serviceWorker
-		.register('./service-worker.js')
+		.register('./miscwebapps/manualBPM/service-worker.js')
 			.then(function() { console.log('Service Worker Registered'); });
 }
