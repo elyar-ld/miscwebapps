@@ -1,12 +1,12 @@
 var dataCacheName = 'BPMeter';
 var cacheName = 'BPMeter';
 var filesToCache = [
-  '/',
-  '/index.html',
-  '/logic.js',
-  '/style.css',
-  '/imgs/metronome.png',
-  '/imgs/metronome2.png'
+  '/miscwebapps/manualBPM',
+  '/miscwebapps/manualBPM/index.html',
+  '/miscwebapps/manualBPM/logic.js',
+  '/miscwebapps/manualBPM/style.css',
+  '/miscwebapps/manualBPM/imgs/metronome.png',
+  '/miscwebapps/manualBPM/imgs/metronome2.png'
 ];
 
 self.addEventListener('install', function(e) {
