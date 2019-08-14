@@ -1,6 +1,6 @@
 var RADIO = 250;
-var POINTS = 200;
-XSIZE = 68;
+var POINTS = 150;
+XSIZE = 2;
 
 var coordsInt = generatePairs(POINTS, XSIZE);
 
