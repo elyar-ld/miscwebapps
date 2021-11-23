@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Times Thread Coords Viewer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=0.7">
+	<script type="text/javascript" src="fabric.min.js"></script>
+	<script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+		
+</head>
+<body style="width: 100%;height: 100vh; color: white; background-color: #1b1b1b">
+	<h1 id="coord" style="font-family: sans-serif;font-size: 72px; text-align: center; width: 100%;"></h1>
+	<div style="text-align: center;"><canvas id="c" width="505" height="505"></canvas></div>
+	<img src="arrow.gif" style="position: fixed; top: 40vh; right:-38px; transform: rotate(270deg); width: 150px;">
+	<img src="arrow.gif" style="position: fixed; top: 39vh; left: -42px; transform: rotate(90deg); width: 150px;">
+	<div style="position: fixed; bottom: 0; width: 100%;">
+		<h3 id="progress" style="text-align: center;"></h3>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

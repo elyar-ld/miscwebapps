@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manual BPM</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="manifest" href="manifest.json">
+</head>
+<body ontouchstart="measure();" style="">
+	<div class="header">
+		<h2>BPM manual meter</h2>
+		<p>Tap screen at music pace</p>
+	</div>
+	<h1 id="measure">0.0</h1>
+	<img src="imgs/metronome.png" id="metronome">
+
+	<div class="footer" ontouchstart="location.reload();">
+		<h2>Reload</h2>
+	</div>
+	<script type="text/javascript" src="logic.js"></script>
+</body>
+</html>
+

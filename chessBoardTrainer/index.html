@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chess board coordinates trainer</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="icon" href="img/icons/icon-128.png" sizes="128x128" type="image/png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="manifest" href="/manifest.json">
+	<meta charset="utf-8">
+</head>
+<body>
+	<span id="conf" onclick="openNav()">&#9965;</span>
+	<div id="coordinateContainer"><h3 id="coordinate"></h3></div>
+	<div id="clock" style="position: fixed; right: 5px;top:15px;"></div>
+	<div id="board">
+		
+	</div>
+	
+	<div id="controls">
+		<div id="startContainer"><input type="button" name="start" id="start" value="START" onclick = "startGame();"></div>
+		<div id="scoreContainer"><h1 id="score">0/0</h1></div>
+		<div></div>
+	</div>
+	<div id="answerContainer" >
+		<img  id="answerImage" class="fadeOut">
+	</div>
+		
+	<!--########################  MENU  ##############################-->
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  	<table id="list-of-confs">
+	  		<tr>
+	  			<td>Show coordinates </td>
+	  			<td>
+	  				<div class="onoffswitch">
+					    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="coordinatesTags" checked>
+					    <label class="onoffswitch-label" for="coordinatesTags">
+					        <span class="onoffswitch-inner"></span>
+					        <span class="onoffswitch-switch"></span>
+					    </label>
+					</div>
+				</td>
+	  		</tr>
+	  		<tr>
+	  			<td>Ask Rows </td>
+	  			<td>
+	  				<div class="onoffswitch">
+					    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="askRows" checked>
+					    <label class="onoffswitch-label" for="askRows">
+					        <span class="onoffswitch-inner"></span>
+					        <span class="onoffswitch-switch"></span>
+					    </label>
+					</div>
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td>Ask Columns </td>
+	  			<td>
+	  				<div class="onoffswitch">
+					    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="askColumns" checked>
+					    <label class="onoffswitch-label" for="askColumns">
+					        <span class="onoffswitch-inner"></span>
+					        <span class="onoffswitch-switch"></span>
+					    </label>
+					</div>
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td>Perspective </td>
+	  			<td>
+	  				<div class="onoffswitch">
+					    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="askPerspective" checked>
+					    <label class="onoffswitch-label" for="askPerspective">
+					        <span class="bl-wht-switch-inner"></span>
+					        <span class="onoffswitch-switch"></span>
+					    </label>
+					</div>
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td>Time (secs) </td>
+	  			<td><input type="number" id="time" value="35" step="1"></td>
+	  		</tr>
+	  	</table>
+	</div>
+	<!--#########################################################-->
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
