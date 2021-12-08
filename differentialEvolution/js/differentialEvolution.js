@@ -11,10 +11,7 @@ const helpers ={
 		return population[bestIndex];
 	},
 	copyArray : function(array){
-		let newArray = [];
-		for(let i = 0 , length = array.length; i < length; i++)
-			newArray[i] = array[i];
-		return newArray;
+		return JSON.parse(JSON.stringify(array));
 	}
 }
 
@@ -23,9 +20,10 @@ function initialization(size, bounds){
 	let population = [];
 	for(var i = 0; i < size; i++){
 		var varsVals = [];
-		population[i] = {};
-		for(var j = 0; j < bounds.length; j++)
+		population[i] = {vars:[], val:0};
+		for(var j = 0; j < bounds.length; j++){
 			varsVals[j] = rand.nextFloat() * (bounds[j].max - bounds[j].min) + bounds[j].min;
+		}
 		population[i].vars = helpers.copyArray(varsVals);
 		population[i].val = of(varsVals);
 	}
@@ -143,17 +141,6 @@ function DE(size, F, Cr, GEN, bounds, x, y, z, s, seed = Math.floor(Math.random(
 }
 
 function of(vars){
-	/*//cross-leg table
-	return (-1*(Math.abs(Math.sin(vars[0])*Math.sin(vars[1])*Math.E**Math.abs(100-((vars[0]**2+vars[1]**2)**0.5)/Math.PI))+1)**(-0.1));*/
-	
-	/*//rosenbrock
-	let sum = 0.0;
-	for(let i = 0, length1 = vars.length; i < length1; i++)
-		sum += vars[i]**2 - 10*Math.cos(2*Math.PI*vars[i]);
-	return (10*vars.length + sum);*/
-	
-	/*//sphere
-	return (vars[0]**2+vars[1]**2);*/
 	return (-(vars[1]+47)*Math.sin(Math.sqrt(Math.abs( (vars[0]/2)+(vars[1]+47)))) -vars[0]*Math.sin(Math.sqrt(Math.abs(vars[0]-(vars[1]+47) ))));
 }
 

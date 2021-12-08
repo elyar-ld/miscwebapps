@@ -283,13 +283,13 @@ const testFunctions ={
 			return (-(vars[1]+47)*Math.sin(Math.sqrt(Math.abs( (vars[0]/2)+(vars[1]+47)))) -vars[0]*Math.sin(Math.sqrt(Math.abs(vars[0]-(vars[1]+47) ))));
 		},
 		bounds : {
-			min : -100.0,
-			max : 100.0
+			min : -512.0,
+			max : 512.0
 		},
 		globalMinimum: [
 			{
-				vars : [Math.PI,Math.PI],
-				val : -1.0
+				vars : [512.0,404.2319],
+				val : -957.6407
 			}
 		]
 	},
